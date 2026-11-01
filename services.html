@@ -1,21 +1,24 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Paslaugos</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Paslaugos - Mano CV</title>
+  <meta name="author" content="Karolis Chmeliauskas">
+  <meta name="description" content="Karolio Chmeliausko CV paslaugų puslapis.">
+  <meta name="keywords" content="CV, elektronika, KiCad, MATLAB, ESP32">
 
   <!-- Favicons -->
- <link rel="icon" type="image/png" href="assets/img/antras.png?v=7">
-<link rel="apple-touch-icon" href="assets/img/antras.png">
+  <link rel="icon" type="image/png" href="assets/img/antras.png?v=7">
+  <link rel="apple-touch-icon" href="assets/img/antras.png">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,124 +30,375 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Papildomas stilius -->
+  <style>
+    .services .table {
+      --bs-table-bg: transparent;
+      --bs-table-color: var(--default-color);
+      --bs-table-border-color: color-mix(
+        in srgb, var(--default-color), transparent 75%
+      );
+      --bs-table-hover-bg: color-mix(
+        in srgb, var(--accent-color), transparent 90%
+      );
+      --bs-table-hover-color: var(--heading-color);
+    }
+
+    .services .table thead th {
+      background-color: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 15px;
+    }
+
+    .services .table tbody td {
+      padding: 15px;
+      vertical-align: middle;
+    }
+
+    .services .content-box {
+      background: var(--surface-color);
+      padding: 30px;
+      border-radius: 12px;
+      height: 100%;
+    }
+
+    .services .content-box h3 {
+      margin-bottom: 20px;
+      color: var(--heading-color);
+    }
+
+    .services .content-box li {
+      margin-bottom: 12px;
+      line-height: 1.8;
+    }
+
+    .services .content-box ul ul {
+      margin-top: 10px;
+    }
+
+    .services .media-video {
+      width: 100%;
+      border-radius: 12px;
+      background: #000;
+    }
+
+    .services .media-audio {
+      width: 100%;
+      margin-top: 15px;
+    }
+  </style>
+
+  <!--
+  Template Name: FolioOne
+  Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
+  Author: BootstrapMade.com
+  License: https://bootstrapmade.com/license/
+  -->
+
 </head>
 
 <body class="services-page">
 
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+  <!-- HEADER -->
+  <header id="header"
+          class="header d-flex align-items-center light-background sticky-top">
+
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <!-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="assets/img/logo.webp" alt="">
-      <h1 class="sitename">FolioOne</h1> 
-    </a> -->
-
+      <!-- Navigacijos meniu -->
       <nav id="navmenu" class="navmenu">
+
         <ul>
           <li><a href="index.html">Pagrindinis</a></li>
           <li><a href="about.html">Apie</a></li>
           <li><a href="resume.html">Patirtis</a></li>
           <li><a href="services.html" class="active">Paslaugos</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html">Atlikti darbai</a></li>
           <li><a href="contact.html">Kontaktai</a></li>
         </ul>
+
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
       </nav>
 
+      <!-- Socialiniai tinklai -->
       <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="twitter">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+
+        <a href="#" class="facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="#" class="instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="#" class="linkedin">
+          <i class="bi bi-linkedin"></i>
+        </a>
       </div>
 
     </div>
+
   </header>
 
+  <!-- MAIN -->
   <main class="main">
 
-    <!-- Services Section -->
     <section id="services" class="services section">
 
-      <!-- Section Title -->
+      <!-- Skilties pavadinimas -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Paslaugos</h2>
-      </div><!-- End Section Title -->
 
+        <h2>Paslaugos</h2>
+
+        <p>
+          Mano teikiamos paslaugos elektronikos,
+          elektrotechnikos ir programavimo srityse.
+        </p>
+
+      </div>
+
+      <!-- PASLAUGU LENTELE -->
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row justify-content-center g-5">
+        <h3 class="mb-4">Paslaugų kainoraštis</h3>
 
-          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <div class="service-content">
-                <h3>Custom Web Development</h3>
-                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+        <div class="table-responsive">
 
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-phone-fill"></i>
-              </div>
-              <div class="service-content">
-                <h3>Mobile App Solutions</h3>
-                <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada.</p>
-                <a href="" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+          <table class="table table-bordered table-hover">
 
-          <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-palette2"></i>
-              </div>
-              <div class="service-content">
-                <h3>UI/UX Design</h3>
-                <p>Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
-                <a href="" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+            <thead>
+              <tr>
+                <th>Paslauga</th>
+                <th>Aprašymas</th>
+                <th>Kaina</th>
+              </tr>
+            </thead>
 
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-bar-chart-line"></i>
-              </div>
-              <div class="service-content">
-                <h3>Digital Marketing</h3>
-                <p>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit.</p>
-                <a href="" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
+            <tbody>
+
+              <tr>
+                <td>Elektroninių schemų kūrimas</td>
+                <td>
+                  Elektroninių schemų projektavimas
+                  naudojant KiCad programą.
+                </td>
+                <td>30 €</td>
+              </tr>
+
+              <tr>
+                <td>MATLAB modeliavimas</td>
+                <td>
+                  Matematinių funkcijų analizė,
+                  skaičiavimai ir grafikų sudarymas.
+                </td>
+                <td>25 €</td>
+              </tr>
+
+              <tr>
+                <td>ESP32 programavimas</td>
+                <td>
+                  Mikrovaldiklių programavimas,
+                  jutiklių prijungimas ir testavimas.
+                </td>
+                <td>40 €</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </div>
+
+      <!-- HTML SARASAI -->
+      <div class="container mt-5" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <!-- NENUMERUOTAS SARASAS -->
+          <div class="col-lg-6">
+
+            <div class="content-box">
+
+              <h3>Naudojamos technologijos</h3>
+
+              <ul>
+
+                <li>
+                  KiCad – elektroninių schemų projektavimas
+                </li>
+
+                <li>
+                  MATLAB – matematinis modeliavimas
+                </li>
+
+                <li>
+                  ESP32 – mikrovaldiklių programavimas
+
+                  <!-- Idetinis sarasas -->
+                  <ul>
+                    <li>C++ programavimo kalba</li>
+                    <li>Temperatūros ir drėgmės jutikliai</li>
+                    <li>OLED ekranų prijungimas</li>
+                  </ul>
+
+                </li>
+
+              </ul>
+
             </div>
-          </div><!-- End Service Item -->
+
+          </div>
+
+          <!-- NUMERUOTAS SARASAS -->
+          <div class="col-lg-6">
+
+            <div class="content-box">
+
+              <h3>Darbo atlikimo etapai</h3>
+
+              <ol>
+
+                <li>
+                  Užduoties analizė ir planavimas
+                </li>
+
+                <li>
+                  Elektroninės schemos projektavimas
+                  arba programos kūrimas
+                </li>
+
+                <li>
+                  Projekto testavimas ir
+                  rezultatų pateikimas
+                </li>
+
+              </ol>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PAPILDOMA UZDUOTIS -->
+      <!-- VAIZDO IR GARSO IRASAI -->
+
+      <div class="container mt-5" data-aos="fade-up">
+
+        <h3 class="mb-4">Vaizdo ir garso įrašai</h3>
+
+        <div class="row gy-4">
+
+          <!-- PEXELS VIDEO -->
+          <div class="col-lg-6">
+
+            <div class="content-box">
+
+              <h3>Darbas kompiuteriu</h3>
+
+              <p>
+                Vaizdo įrašas apie darbą
+                kompiuterio klaviatūra.
+              </p>
+
+              <video
+                controls
+                preload="metadata"
+                class="media-video">
+
+                <source
+                  src="assets/media/video.mp4"
+                  type="video/mp4">
+
+                Jūsų naršyklė nepalaiko vaizdo įrašų.
+
+              </video>
+
+              <p class="mt-3">
+                Šaltinis:
+                <a
+                  href="https://www.pexels.com/video/person-is-typing-using-computer-keyboard-7534244/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Pexels
+                </a>
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- YOUTUBE VIDEO -->
+          <div class="col-lg-6">
+
+            <div class="content-box">
+
+              <h3>YouTube vaizdo įrašas</h3>
+
+              <p>
+                Papildomas vaizdo įrašas
+                iš YouTube platformos.
+              </p>
+
+              <div class="ratio ratio-16x9">
+
+                <iframe
+                  src="https://www.youtube.com/embed/BoUVIhtqjAw"
+                  title="YouTube vaizdo įrašas"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- PIXABAY GARSAS -->
+          <div class="col-lg-12">
+
+            <div class="content-box">
+
+              <h3>Laikrodžio tiksėjimo garsas</h3>
+
+              <p>
+                Demonstracinis laikrodžio tiksėjimo
+                garso įrašas iš Pixabay.
+              </p>
+
+              <audio controls class="media-audio">
+
+                <source
+                  src="assets/media/garsas.mp3"
+                  type="audio/mpeg">
+
+                Jūsų naršyklė nepalaiko garso įrašų.
+
+              </audio>
+
+              <p class="mt-3">
+                Šaltinis:
+                <a
+                  href="https://pixabay.com/sound-effects/film-special-effects-quartz-clock-ticking-one-minute-253102/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Pixabay
+                </a>
+              </p>
+
+            </div>
+
+          </div>
 
         </div>
 
@@ -154,31 +408,45 @@
 
   </main>
 
+  <!-- FOOTER -->
   <footer id="footer" class="footer">
 
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">FolioOne</strong> <span>All Rights Reserved<br></span></p>
+
+      <div class="copyright text-center">
+
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">FolioOne</strong>
+          <span>All Rights Reserved</span>
+        </p>
+
       </div>
+
       <div class="social-links d-flex justify-content-center">
         <a href=""><i class="bi bi-twitter-x"></i></a>
         <a href=""><i class="bi bi-facebook"></i></a>
         <a href=""><i class="bi bi-instagram"></i></a>
         <a href=""><i class="bi bi-linkedin"></i></a>
       </div>
+
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+        Designed by
+        <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        |
+        <a href="https://bootstrapmade.com/tools/">DevTools</a>
       </div>
+
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#"
+     id="scroll-top"
+     class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
