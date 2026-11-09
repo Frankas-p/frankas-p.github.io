@@ -1,0 +1,429 @@
+
+/* 1. BENDRAS SVETAINES STILIUS */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  background-color: #101c22;
+  color: #e2e8f0;
+}
+
+/* 2. SVETAINES SRIFTAI */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, serif;
+  font-weight: 700;
+  color: #38bdf8;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+h1 { font-size: 42px; }
+h2 { font-size: 34px; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 17px; }
+
+/* 3. PASTRAIPOS */
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #e2e8f0;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+}
+
+/* 4. MYGTUKAI */
+
+button,
+.btn,
+input[type="submit"] {
+  background-color: #1689bd;
+  color: #ffffff;
+  border: 2px solid #1689bd;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover,
+.btn:hover,
+input[type="submit"]:hover {
+  background-color: #075eab;
+  border-color: #075eab;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+button:active,
+.btn:active,
+input[type="submit"]:active {
+  background-color: #034477;
+  border-color: #034477;
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/* 5. NUORODOS */
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #fbbf24;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #fb923c;
+}
+
+/* 6. SEKCIJU ISDESTYMAS */
+
+.about,
+.resume,
+.portfolio {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about .container,
+.resume .container,
+.portfolio .container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.about .section-title,
+.resume .section-title,
+.portfolio .section-title {
+  margin-bottom: 45px;
+  padding-bottom: 20px;
+}
+
+/* 7. APIE PUSLAPIS */
+
+.about .about-content,
+.about .content,
+.about .about-card {
+  padding: 30px;
+  margin-bottom: 25px;
+  border: 1px solid #dce5ef;
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: #1e293b;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+.about .about-content h2,
+.about .about-content h3,
+.about .about-content p,
+.about .content h2,
+.about .content h3,
+.about .content p,
+.about .about-card h3,
+.about .about-card p {
+  color: #1e293b;
+}
+
+/* 8. PATIRTIES PUSLAPIS */
+
+.resume .resume-item {
+  padding: 25px;
+  margin-bottom: 30px;
+  border: 1px solid #dce5ef;
+  border-radius: 15px;
+  background-color: #D9D9D9;
+  color: #1e293b;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Antrasciu spalvos */
+
+.resume .resume-title,
+.resume .resume-item h2,
+.resume .resume-item h3,
+.resume .resume-item h4 {
+  color: #17365d !important;
+}
+
+/* Pagrindinio teksto spalvos */
+
+.resume .resume-item p,
+.resume .resume-item li,
+.resume .resume-item em,
+.resume .resume-item strong {
+  color: #1e293b !important;
+}
+
+/* Datos */
+
+.resume .resume-item h5 {
+  background-color: #eaf4fa;
+  color: #075eab !important;
+  padding: 6px 12px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+
+/* 9. ATLIKTI DARBAI */
+
+.portfolio .portfolio-card {
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #dce5ef;
+  border-radius: 15px;
+  background-color: #14232d;
+  color: #1e293b;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio .portfolio-card h3,
+.portfolio .portfolio-card h4,
+.portfolio .portfolio-card p {
+  color: #1e293b;
+}
+
+.portfolio .portfolio-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* 10. MOBILUSIS ISDESTYMAS */
+
+@media (max-width: 768px) {
+  .about,
+  .resume,
+  .portfolio {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .about .container,
+  .resume .container,
+  .portfolio .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h1 { font-size: 32px; }
+  h2 { font-size: 26px; }
+}
+
+/* 11. NAVIGACIJOS JUOSTA */
+
+.header {
+  background-color: #19385e;
+  border-top: none;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.header .navmenu a {
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.header .navmenu a:hover,
+.header .navmenu a.active {
+  color: #38bdf8;
+  background-color: #244d78;
+  border-radius: 6px;
+}
+
+.header .social-links a {
+  color: #cbd5e1;
+}
+
+@media (min-width: 1200px) {
+  .header {
+    position: relative;
+  }
+
+  .header .navmenu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header .navmenu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* 12. PROGRESO JUOSTOS */
+
+.skills .skill-box .progress,
+.resume .skill-item .progress {
+  height: 16px;
+  background-color: #dceaf3;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.skills .skill-box .progress .progress-bar,
+.resume .skill-item .progress .progress-bar {
+  height: 100%;
+  background-color: #1689bd;
+  border-radius: 20px;
+  transition: width 0.8s ease;
+}
+
+.skills .skill-box .progress:hover .progress-bar,
+.resume .skill-item .progress:hover .progress-bar {
+  background-color: #075eab;
+}
+
+/* 13. NUMERUOTAS SARASAS */
+
+.services ol {
+  counter-reset: saraso-numeris;
+  list-style: none;
+  padding-left: 10px;
+}
+
+.services ol > li {
+  counter-increment: saraso-numeris;
+  position: relative;
+  padding-left: 42px;
+  margin-bottom: 15px;
+}
+
+.services ol > li::before {
+  content: counter(saraso-numeris);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #1689bd;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* 14. NENUMERUOTAS SARASAS */
+
+.services ul {
+  list-style-type: disc;
+  padding-left: 28px;
+}
+
+.services ul > li {
+  margin-bottom: 10px;
+}
+
+.services ul > li::marker {
+  color: #38bdf8;
+  font-size: 18px;
+}
+
+/* 15. IDETINIS SARASAS */
+
+.services ul ul {
+  list-style-type: square;
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+.services ul ul > li {
+  color: #cbd5e1;
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.services ul ul > li::marker {
+  color: #fbbf24;
+}
+
+/* 16. LENTELES STILIUS */
+
+.services table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  background-color: #ffffff;
+}
+
+.services table th,
+.services table td {
+  border: 1px solid #c7d5e5;
+  padding: 15px 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* 17. LENTELES ANTRASTE */
+
+.services table thead th {
+  background-color: #1689bd;
+  color: #fffff;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+/* 18. LENTELES ZEBRA EFEKTAS */
+
+.services table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.services table tbody tr:nth-child(even) {
+  background-color: #e8f1fa;
+}
+
+.services table tbody tr:hover {
+  background-color: #cfe7fa;
+}
+
+/* 19. LENTELES TEKSTAS */
+
+.services table tbody td {
+  color: #1e293b;
+}
+
+/* 20. PAPILDOMAS KONTRASTAS */
+
+.resume .resume-item h2,
+.resume .resume-item h3,
+.resume .resume-item h4,
+.resume .resume-item h5,
+.resume .resume-item h6,
+.resume .resume-item strong,
+.resume .resume-item span {
+  color: #17365d;
+}
+
+.resume .resume-title {
+  color: #17365d;
+}
+
+.about .about-content li,
+.about .content li,
+.about .about-card li {
+  color: #1e293b;
+}
