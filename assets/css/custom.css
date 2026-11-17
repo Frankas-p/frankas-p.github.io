@@ -880,3 +880,107 @@ a:active {
   }
 }
 
+
+/* 42. KONTAKTŲ FORMA (11 LD) */
+
+.cv-form .form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.cv-form .form-control {
+  width: 100%;
+  background-color: #0b1419;
+  color: #e2e8f0;
+  border: 1px solid #2b4452;
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+
+.cv-form .form-control:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.cv-form .form-control.is-invalid {
+  border-color: #ef4444;
+  background-image: none;
+  padding-right: 16px;
+}
+
+.cv-form .form-control.is-invalid:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+.cv-form .form-control.is-valid {
+  border-color: #22c55e;
+  background-image: none;
+  padding-right: 16px;
+}
+
+.cv-form .invalid-feedback {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #f87171;
+}
+
+.cv-form .rating-hint {
+  margin: 8px 0 0;
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+.cv-form .form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.cv-form .btn[disabled],
+.cv-form .btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  background-color: #1689bd;
+  border-color: #1689bd;
+}
+
+.cv-form .btn-clear {
+  background-color: transparent;
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+.cv-form .btn-clear:hover {
+  background-color: #38bdf8;
+  border-color: #38bdf8;
+  color: #101c22;
+}
+
+.form-result {
+  margin-top: 32px;
+  padding: 20px 24px;
+  border-left: 4px solid #38bdf8;
+  border-radius: 10px;
+  background-color: #0b1419;
+  font-style: italic;
+}
+
+.form-result p {
+  margin: 0 0 6px;
+  line-height: 1.7;
+}
+
+.form-result .result-average {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #2b4452;
+  font-weight: 700;
+  color: #38bdf8;
+}
